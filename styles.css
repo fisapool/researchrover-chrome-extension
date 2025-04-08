@@ -3,6 +3,23 @@
   :root {
     --tally-bg: #1a1a1a;
     --tally-text: #e0e0e0;
+    --tally-hover-bg: #2a2a2a;
+    --tally-border: #333333;
+    --tally-link: #4da3ff;
+    --tooltip-bg: #242424;
+    --tooltip-border: #333333;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --tally-bg: #ffffff;
+    --tally-text: #0e1d1a;
+    --tally-hover-bg: #f4f4f4;
+    --tally-border: #cfcfcf;
+    --tally-link: #0062ff;
+    --tooltip-bg: #ffffff;
+    --tooltip-border: #ebebeb;
   }
 }
 @font-face{font-family:scite-icons;font-style:normal;font-weight:400;src:url(https://cdn.scite.ai/assets/fonts/scite-icons/scite-icons.eot?v=5);src:url(https://cdn.scite.ai/assets/fonts/scite-icons/scite-icons.eot?v=5#iefix) format("embedded-opentype"),url(https://cdn.scite.ai/assets/fonts/scite-icons/scite-icons.woff2?v=5) format("woff2"),url(https://cdn.scite.ai/assets/fonts/scite-icons/scite-icons.woff?v=5) format("woff"),url(https://cdn.scite.ai/assets/fonts/scite-icons/scite-icons.ttf?v=5) format("truetype"),url(https://cdn.scite.ai/assets/fonts/scite-icons/scite-icons.svg?v=5#fontello) format("svg")}
