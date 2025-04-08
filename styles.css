@@ -23,3 +23,34 @@
   }
 }
 @font-face{font-family:scite-icons;font-style:normal;font-weight:400;src:url(https://cdn.scite.ai/assets/fonts/scite-icons/scite-icons.eot?v=5);src:url(https://cdn.scite.ai/assets/fonts/scite-icons/scite-icons.eot?v=5#iefix) format("embedded-opentype"),url(https://cdn.scite.ai/assets/fonts/scite-icons/scite-icons.woff2?v=5) format("woff2"),url(https://cdn.scite.ai/assets/fonts/scite-icons/scite-icons.woff?v=5) format("woff"),url(https://cdn.scite.ai/assets/fonts/scite-icons/scite-icons.ttf?v=5) format("truetype"),url(https://cdn.scite.ai/assets/fonts/scite-icons/scite-icons.svg?v=5#fontello) format("svg")}
+.pdf-preview-container {
+  display: flex;
+  height: 100vh;
+  background: var(--tally-bg);
+  color: var(--tally-text);
+}
+
+#pdfViewer {
+  flex: 2;
+  overflow: auto;
+  padding: 20px;
+  border-right: 1px solid var(--tally-border);
+}
+
+.citation-context {
+  flex: 1;
+  padding: 20px;
+  background: var(--tooltip-bg);
+  border-left: 1px solid var(--tooltip-border);
+}
+
+.context-text {
+  font-family: IBM Plex Sans, sans-serif;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.page-number {
+  color: #828179;
+  font-size: 0.9em;
+}
