@@ -1,6 +1,6 @@
 (()=>{var e={};function t(){browser.runtime.lastError?console.log("Error: ".concat(browser.runtime.lastError)):console.log("Item created successfully")}"undefined"!=typeof chrome&&chrome&&(browser=chrome),browser.runtime.onInstalled.addListener(function(e){"install"===e.reason&&browser.tabs.create({url:"https://scite.ai/extension-install"})}),// Track color scheme changes
 // Theme management
-const themeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+var themeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
 function handleThemeChange(e) {
   const isDark = e.matches;

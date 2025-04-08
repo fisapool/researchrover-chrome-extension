@@ -1,6 +1,6 @@
-{
-"update_url": "https://clients2.google.com/service/update2/crx",
 
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
   "name": "Scite",
   "author": "Scite Inc.",
   "version": "1.37.0",
@@ -18,19 +18,14 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "index.js"
-      ],
-      "css": [
-        "styles.css"
-      ]
+      "matches": ["<all_urls>"],
+      "js": ["index.js"],
+      "css": ["styles.css"]
     }
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "type": "module"
   },
   "externally_connectable": {
     "matches": [
@@ -43,18 +38,15 @@
     "storage",
     "tabs"
   ],
-  "web_accessible_resources": [{
-    "resources": ["pdf-preview.html", "pdf.js", "pdf-preview.js"],
-    "matches": ["<all_urls>"]
-  }],
   "web_accessible_resources": [
     {
       "resources": [
+        "pdf-preview.html",
+        "pdf.js",
+        "pdf-preview.js",
         "fonts/*"
       ],
-      "matches": [
-        "<all_urls>"
-      ]
+      "matches": ["<all_urls>"]
     }
   ],
   "content_security_policy": {},
